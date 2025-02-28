@@ -8,6 +8,7 @@ $color-second: #33d9b2;
 $color-third: #ff5252;
 $color-on-dark: #ffffff;
 $color-on-light: #2c2c54;
+$transition: all 1s;
 
 
 /* Global */
@@ -32,6 +33,39 @@ body {
 
 section {
     padding: 96px auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 20px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: $font-text;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    background-position: 100% 0;
+    background-size: 300%;
+    transition: $transition;
+}
+
+.btn:hover {
+    background-position: 0 100%;
+    color: $color-on-dark;
+}
+
+.btn-one {
+    border-color: $color-on-dark;
+    color: $color-on-dark;
+    background-image: linear-gradient(90deg, $color-on-dark 50%, transparent 50%);
+}
+
+.btn-one:hover {
+    color: $color-main;
 }
 
 
@@ -86,3 +120,38 @@ display: block;
 .navigation ul li ul li a:hover {
     color: $color-second;
 }
+
+/* Header */
+
+.splash {
+    background-color: $color-main;
+    color: $color-on-dark;
+    min-height: 500px;
+    display: flex;
+}
+
+.splash-inner {
+    margin: auto;
+    max-width: 70%;
+}
+
+.page-title {
+    margin: 0;
+    word-spacing: -24px;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: $font-header
+}
+
+.page-title span {
+    font-family: $font-text;
+}
+
+.page-subtitle {
+    font-size: 16px;
+    margin: 24px 0;
+    font-weight: 400;
+    font-family: $font-header;
+}
+
