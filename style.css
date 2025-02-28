@@ -55,6 +55,13 @@ section {
   color: #0097e6;
 }
 
+.section-title {
+  font-family: "Inconsolata", sans-serif;
+  font-size: 48px;
+  margin: 0 0 72px 0;
+  font-weight: 600;
+}
+
 /* Navigation */
 nav {
   background-color: #0097e6;
@@ -136,4 +143,71 @@ nav {
   margin: 24px 0;
   font-weight: 400;
   font-family: "Inconsolata", sans-serif;
+}
+
+/* About */
+.wrapper-about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  flex: 0 0 33.333%;
+  position: relative;
+  font-family: "Inconsolata", sans-serif;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-numer {
+  position: absolute;
+  font-size: 144px;
+  line-height: 0.65;
+  color: #33d9b2;
+  z-index: -1;
+  opacity: 0.2;
+  font-weight: 900;
+  margin-top: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
+.box-title {
+  font-size: 24px;
+  margin: 0 0 12px 0;
+}
+
+.box p {
+  margin-top: 0;
+}
+
+.box p:first-of-type {
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.box .btn {
+  margin-top: auto;
+  margin-left: 0;
+}
+
+.btn-two {
+  border-color: #33d9b2;
+  color: #33d9b2;
+  background-image: linear-gradient(90deg, #33d9b2 50%, transparent 50%);
+}
+
+.btn-three {
+  border-color: #ff5252;
+  color: #ff5252;
+  background-image: linear-gradient(90deg, #ff5252 50%, transparent 50%);
+}
+
+.btn-four {
+  border-color: #0097e6;
+  color: #0097e6;
+  background-image: linear-gradient(90deg, #0097e6 50%, transparent 50%);
 }/*# sourceMappingURL=style.css.map */
