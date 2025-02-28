@@ -1,0 +1,88 @@
+/* Variables */
+
+$font-text: 'Signika', sans-serif;
+$font-header: 'Inconsolata', sans-serif;
+
+$color-main: #0097e6;
+$color-second: #33d9b2;
+$color-third: #ff5252;
+$color-on-dark: #ffffff;
+$color-on-light: #2c2c54;
+
+
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $font-text;
+    color: $color-on-light;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 96px auto;
+}
+
+
+/* Navigation */
+nav {
+    background-color: $color-main;
+    padding: 12px 0;
+}
+
+.navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin: 0 36px;
+    position: relative;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: $color-on-dark;
+}
+
+.navigation a:hover {
+    color: $color-second;
+}
+
+.navigation ul li ul {
+    // display: block;
+    margin-bottom: 12px;
+    display: none;
+    position: absolute;
+    background-color: $color-on-dark;
+    // text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 12px;
+}
+
+.navigation ul li:hover ul {
+display: block;
+}
+
+.navigation ul li ul li a {
+    color: $color-on-light;
+    padding: 0 24px;
+}
+
+.navigation ul li ul li a:hover {
+    color: $color-second;
+}
