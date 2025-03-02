@@ -75,6 +75,12 @@ section {
     font-weight: 600;
 }
 
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 
 /* Navigation */
 nav {
@@ -163,12 +169,6 @@ display: block;
 }
 
 /* About */
-
-.wrapper-about {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
 .box {
     flex: 0 0 33.333%;
