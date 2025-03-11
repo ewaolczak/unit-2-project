@@ -110,12 +110,10 @@ nav {
 }
 
 .navigation ul li ul {
-    // display: block;
     margin-bottom: 12px;
     display: none;
     position: absolute;
     background-color: $color-on-dark;
-    // text-align: center;
     left: 50%;
     transform: translate(-50%);
     padding-top: 12px;
@@ -299,7 +297,7 @@ display: block;
     z-index: 1;
     top: 20px;
     left: 20px;
-    transition: all 1s;
+    transition: $transition;
 }
 
 .work-image:hover::after {
@@ -399,4 +397,40 @@ input {
 
 textarea {
     padding: 10px 10px 0 10px;
+}
+
+/* Footer */
+
+footer {
+    margin: 48px auto;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    font-size: 0;
+    
+}
+
+footer ul li i {
+    font-size: 30px;
+    color: $color-on-dark;
+    background: $color-third;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding: 15px;
+    transition: $transition;
+}
+
+footer ul li i:hover {
+    transform: scale(1.2);
 }
