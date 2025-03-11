@@ -27,7 +27,7 @@ body {
 
 .container {
     max-width: 1140px;
-    margin: 96px auto 0 auto;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
@@ -286,7 +286,6 @@ display: block;
     min-width: 50%;
     max-width: 250px;
     height: 100%;
-    z-index: -1;
     display: block;
 }
 
@@ -303,9 +302,9 @@ display: block;
     transition: all 1s;
 }
 
-// .work-image:hover::after {
-//     transform: translate(-20px, -20px);
-// }
+.work-image:hover::after {
+    transform: translate(-20px, -20px);
+}
 
 .work-image img {
     width: 100%;
@@ -337,6 +336,10 @@ display: block;
 
 .contact-data h3 {
     margin-bottom: 0;
+}
+
+.contact-data h3:first-of-type {
+    margin-top: 0;
 }
 
 .contact-data p {
@@ -372,21 +375,28 @@ display: block;
     color: $color-main;
 }
 
-// input, textarea {
-//     border: none;
-//     width: 100%;
-//     font-family: $font-text;
-//     font-size: 12px;
-//     bottom: none;
-//     margin: 5px 0;
-//     font-weight: 100;
-// }
+input, textarea {
+    background-color: $color-main;
+    border: none;
+    width: 100%;
+    font-family: $font-text;
+    font-size: 16px;
+    bottom: none;
+    margin: 5px 0;
+    font-weight: 100;
+    border-bottom: 3px solid $color-on-dark;
+}
 
-// input {
-//     padding: 2.5px 10px 0 10px;
-//     height: 30px;
-// }
+input {
+    padding: 2.5px 10px 0 10px;
+    height: 55px;
+}
 
-// textarea {
-//     padding: 10px 10px 0 10px;
-// }
+::placeholder {
+    color: $color-on-dark;
+
+}
+
+textarea {
+    padding: 10px 10px 0 10px;
+}

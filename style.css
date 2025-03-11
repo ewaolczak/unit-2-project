@@ -14,7 +14,7 @@ body {
 
 .container {
   max-width: 1140px;
-  margin: 96px auto 0 auto;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -268,7 +268,6 @@ nav {
   min-width: 50%;
   max-width: 250px;
   height: 100%;
-  z-index: -1;
   display: block;
 }
 
@@ -283,6 +282,10 @@ nav {
   top: 20px;
   left: 20px;
   transition: all 1s;
+}
+
+.work-image:hover::after {
+  transform: translate(-20px, -20px);
 }
 
 .work-image img {
@@ -317,6 +320,10 @@ nav {
   margin-bottom: 0;
 }
 
+.contact-data h3:first-of-type {
+  margin-top: 0;
+}
+
 .contact-data p {
   margin: 0;
   font-size: 18px;
@@ -348,4 +355,33 @@ nav {
 
 .btn-six:hover {
   color: #0097e6;
+}
+
+input, textarea {
+  background-color: #0097e6;
+  border: none;
+  width: 100%;
+  font-family: "Signika", sans-serif;
+  font-size: 16px;
+  bottom: none;
+  margin: 5px 0;
+  font-weight: 100;
+  border-bottom: 3px solid #ffffff;
+}
+
+input {
+  padding: 2.5px 10px 0 10px;
+  height: 55px;
+}
+
+::-moz-placeholder {
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+textarea {
+  padding: 10px 10px 0 10px;
 }/*# sourceMappingURL=style.css.map */
